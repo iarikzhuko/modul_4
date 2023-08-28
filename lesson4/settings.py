@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'app_advertisements',
+    'app_lesson4',
     'app_auth',
 ]
 
@@ -51,12 +51,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'advertisements.urls'
+ROOT_URLCONF = 'lesson4.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [Path.joinpath(BASE_DIR, 'templates')],
+        'DIRS': [Path.joinpath(BASE_DIR, 'Template')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'advertisements.wsgi.application'
+WSGI_APPLICATION = 'lesson4.wsgi.application'
 
 
 # Database
@@ -117,7 +117,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = 'Static/'
 
 STATICFILES_DIRS = [
     Path.joinpath(BASE_DIR, 'static'),
@@ -130,6 +130,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Media conf
 
-MEDIA_ROOT = Path.joinpath(BASE_DIR, 'media/')
+MEDIA_ROOT = Path.joinpath(BASE_DIR, 'Media/')
 
-MEDIA_URL = 'media/'
+MEDIA_URL = 'Media/'

@@ -6,7 +6,7 @@ from .forms import ExtendedUserCreationForm
 
 @login_required(login_url= reverse_lazy('login'))
 def advertisement_post(request):
-    return render(request, 'app_advertisements/advertisement_post.html')
+    return render(request, 'app_lesson4/advertisement_post.html')
 
 @login_required(login_url= reverse_lazy('login'))
 def profile_view(request):

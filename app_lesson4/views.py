@@ -7,11 +7,11 @@ from django.contrib.auth.decorators import login_required
 def index(request):
     advertisements = Advertisment.objects.all()
     context = {'advertisements': advertisements}
-    return render(request, 'app_lesson4/index.html', context)
+    return render(request, 'app_advertisements/index.html', context)
 
 
 def top_sellers(request):
-    return render(request, 'app_lesson4/top-sellers.html')
+    return render(request, 'app_advertisements/top-sellers.html')
 
 @login_required(login_url= reverse_lazy('login'))
 def advertisement_post(request):
@@ -26,5 +26,5 @@ def advertisement_post(request):
     else:
         form = AdvertisementForm()
     context = {'form': form}
-    return render(request, 'app_lesson4/advertisement-post.html', context)
+    return render(request, 'app_advertisements/advertisement-post.html', context)
 
