@@ -1,160 +1,49 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block title %}
-Главная страница
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Главная страница</title>
+</head>
+<body>
+   <h1>Заголовок 1 уровня</h1>
+   <h2>Заголовок 2 уровня</h2>
+   <h4>Заголовок 4 уровня</h4>
+   <h5>Заголовок 5 уровня</h5>
+   <h6>Заголовок 6 уровня</h6>
+   <p class="paragraph-1">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, necessitatibus incidunt magnam eveniet aliquam asperiores molestias delectus ut quidem obcaecati saepe culpa! Provident voluptate rerum nostrum. Alias omnis quos quis.
+   </p>
+   <h3>Заголовок 3 уровня</h3>
+   <p class="paragraph-2">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ipsa nesciunt dolorum sit laborum sapiente autem necessitatibus minus cum magnam, quaerat rem, hic molestiae quia totam. Minus quisquam a repudiandae in fugit quidem? Praesentium id ipsam vero. Maiores repudiandae quos unde quaerat eius! Ex ullam reprehenderit, repudiandae praesentium ea cum omnis veniam illo quae non quidem ratione totam cupiditate! Pariatur dolor, qui quas esse ab sapiente dignissimos, numquam, beatae asperiores repudiandae exercitationem non iure iusto ullam fugiat ipsam unde reprehenderit molestiae perspiciatis! Deleniti aut, quod culpa animi sapiente, sit dolore praesentium, obcaecati ipsa architecto quisquam provident voluptatem qui! Impedit, excepturi quibusdam adipisci aliquam officia et facere id quam consequuntur, doloribus, nulla quos vero placeat. Distinctio asperiores possimus amet voluptatibus magni!
+   </p>
+   <p class="paragraph-3">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti sint iste ad culpa beatae doloremque numquam hic voluptatum sit odio non natus assumenda id cumque, repudiandae pariatur maiores quidem, incidunt mollitia quisquam error? Earum facilis aperiam sit ex exercitationem illo iure quaerat nam animi accusamus. Repudiandae reiciendis porro eligendi! Fugiat necessitatibus sint officia repellendus eveniet magnam quod quisquam expedita voluptatibus, pariatur veritatis culpa esse atque at minima saepe sapiente explicabo!
+   </p>
+   <div class="div-1">
+    <span>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, rerum.
+       </span>
+       <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, ipsum!
+       </span>
+   </div>
+   <span class="paragraph-4">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, fuga.
+   </span>
+   <ul>
+    <li>арбуз</li>
+    <li>яблоко</li>
+    <li>вишня</li>
+   </ul>
+   <ol>
+    <li>открыть браузер</li>
+    <li>ввести в строку поиска запрос</li>
+    <li>просмотреть результаты</li>
+   </ol>
+   <img src ="https://sneg.top/uploads/posts/2023-06/thumbs/1687493937_sneg-top-p-luffi-avatarka-instagram-19.png"  width=”500px”>
 
-{% block content %}
-<ul class="nav nav-pills sticky-top bg-white nav-fill">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="/">
-      <span style="font-weight: bold;">Главная</span>
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="{% url 'top-sellers' %}"><span style="font-weight: bold;">Топ продавцов</span>
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="{% url 'adv-post' %}">
-      <span style="font-weight: bold;">Разместить объявление</span>
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="register.html">
-      <span style="font-weight: bold;">Регистрация</span>
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="login.html">
-      <span style="font-weight: bold;">Войти</span>
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="profile.html">
-      <span style="font-weight: bold;">Профиль</span>
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">
-      <span style="font-weight: bold;">Выйти</span>
-    </a>
-  </li>
-</ul>
-
-<div id="carouselExampleControls" class="carousel slide bg-primary" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="{% static 'img/adv.png' %}" class="mx-auto d-block w-33" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="{% static 'img/adv.png' %}" class="mx-auto d-block w-33" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="{% static 'img/adv.png' %}" class="mx-auto d-block w-33" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Предыдущий</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Следующий</span>
-  </button>
-</div>
-<div class="container" style="margin: 50px;">
-  <div class="display-2">
-    <span class="badge bg-primary">В центре внимания</span>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <ul class="nav nav-tabs bg-white">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Проверенные продавцы</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Новинки</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Избранное</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Еще что-нибудь</a>
-      </li>
-    </ul>
-    <form class="row g-3">
-      <div class="col-auto w-50">
-        <input type="text" class="form-control">
-      </div>
-      <div class="col-auto">
-        <button type="submit" class="btn btn-success mb-3">Найти</button>
-      </div>
-    </form>
-  </div>
-  {% for adv in advertisment %}
-  <div class="col">
-    <div class="card mb-2" style="max-width: 1200px; margin-top: 20px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <a href="advertisement.html" class="nav-link">
-            <img src="{% if adv.image %} {{ adv.image.url }} {% else %} {% static 'img/adv.png' %} {% endif %}" class="img-fluid rounded-start" alt="Card title">
-          </a>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">
-              <a href="advertisement.html" class="nav-link"><strong>{{ adv.title }}</strong></a>
-            </h5>
-            <a href="advertisement.html" class="nav-link">
-              <p class="card-text">
-                {{ adv.description }}
-              </p>
-              <span>Автор: {{ adv.user }}</span>
-              <p class="card-text"><small class="text-muted">Размещено: {{ adv.created_at }}</small></p>
-              <span>Цена: {{ adv.price }}</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  {% endfor %}
-</div>
-<footer style="padding: 100px;" class="bg-primary">
-  <nav class="navbar navbar-expand-sm navbar-dark">
-    <a class="navbar-brand" href="#">Добавьте</a>
-    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-            aria-label="Toggle navigation"></button>
-    <div class="collapse navbar-collapse" id="collapsibleNavId">
-      <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" href="#" aria-current="page">сюда<span
-                  class="visually-hidden">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">что</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
-             aria-expanded="false">хотите</a>
-          <div class="dropdown-menu" aria-labelledby="dropdownId">
-            <a class="dropdown-item" href="#">например</a>
-            <a class="dropdown-item" href="#">ссылки на социальные сети</a>
-          </div>
-        </li>
-      </ul>
-      <form class="d-flex my-2 my-lg-0">
-        <input class="form-control me-sm-2" type="text" placeholder="Search">
-        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-</footer>
-{% endblock %}
-{% block script %}
-{% endblock %}
-
+</body>
 </html>
